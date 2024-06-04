@@ -1,0 +1,33 @@
+@use 'Colores' as C;
+.caja_boton{
+
+    position: relative;
+}
+
+.Boton{
+    border:  4px solid #007bff;
+    background-color: C.$colorBoton;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 37px;
+
+    &_sombreado{
+    width: 80px;
+    height: 80px;
+    background-color: C.$colorTargeta;
+    border-radius: 50%;
+    top: 4px;
+    position: absolute;
+    z-index: -1;
+}
+
+    &:active{
+        transform: translateY(4px);
+    }
+    
+
+}
